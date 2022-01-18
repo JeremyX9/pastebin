@@ -45,10 +45,13 @@ class Pastebin {
       },
       data: data,
     };
-    const response = await axios(config).catch(function (error) {
+    
+    try {
+     return (await axios(config)).data
+    }
+    catch(error) {
       throw new Error(error.response.data);
-    });
-    return response.data;
+    }
   }
 }
 module.exports = Pastebin;
