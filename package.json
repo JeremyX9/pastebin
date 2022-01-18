@@ -1,6 +1,6 @@
 {
-  "name": "pastebin.js",
-  "version": "1.0.0",
+  "name": "@jeremyx9/pastebin",
+  "version": "1.0.1",
   "description": "A Node.JS API for Pastebin.",
   "main": "pastebin.js",
   "scripts": {

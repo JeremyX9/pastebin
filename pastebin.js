@@ -16,7 +16,7 @@ class Pastebin {
       dev_key: dev_key,
       paste_private: "1",
       paste_expire_date: "10M",
-      paste_name: "Code Snippet",
+      paste_name: "PastebinAPI Snippet",
       paste_format: "text",
       user_key: "",
     };
