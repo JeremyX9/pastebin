@@ -1,5 +1,5 @@
 const axios = require("axios");
-var qs = require("qs");
+const qs = require("qs");
 /**
  * This is the main class of the Pastebin API
  */
@@ -27,7 +27,7 @@ class Pastebin {
     if (!paste_code) {
       throw new Error("Paste code is required");
     }
-    var data = qs.stringify({
+    const data = qs.stringify({
       api_option: "paste",
       api_paste_code: paste_code,
       api_paste_private: this.options.paste_private,
@@ -37,7 +37,7 @@ class Pastebin {
       api_paste_format: this.options.paste_format,
       api_dev_key: this.options.dev_key,
     });
-    var config = {
+    const config = {
       method: "post",
       url: this.paste_url,
       headers: {
@@ -45,10 +45,13 @@ class Pastebin {
       },
       data: data,
     };
-    const response = await axios(config).catch(function (error) {
+    
+    try {
+     return (await axios(config)).data
+    }
+    catch(error) {
       throw new Error(error.response.data);
-    });
-    return response.data;
+    }
   }
 }
 module.exports = Pastebin;
