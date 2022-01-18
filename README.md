@@ -9,7 +9,7 @@ const Pastebin = require("@jeremyx9/pastebin");
 ```
 #### create a paste variable to configure options and create a paste
 ```js
-var paste = new Pastebin("your_dev_key");
+const paste = new Pastebin("your_dev_key");
 ```
 #### configure options
 > the following options are the options set by default
