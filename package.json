@@ -1,0 +1,25 @@
+{
+  "name": "pastebin.js",
+  "version": "1.0.0",
+  "description": "A Node.JS API for Pastebin.",
+  "main": "pastebin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Node",
+    "API",
+    "Pastebin",
+    "Paste",
+    "Axios",
+    "OpenSource",
+    "hastebin",
+    "npm",
+    "javascript",
+    "pastebin.js",
+    "jeremyx9"
+  ],
+  "author": "JeremyX9",
+  "license": "ISC"
+}
